@@ -156,11 +156,9 @@ button:hover {
     background: orange;
     transition: 0.5s ease, 0.5s ease-in-out;
     transform: translateY(-2px);
-}
-
-button:hover {
     color: white;
 }
+
 
 .banner video {
     position: absolute;
@@ -236,7 +234,7 @@ button:hover {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     cursor: pointer;
     width: 80%;
-    margin-left: 190px;
+    margin-left: 150px;
 }
 
 
@@ -247,24 +245,47 @@ button:hover {
         box-shadow: none;
         background: none;
         border: none;
+        width: 80%;
+        margin-left: -180px;
+    }
+
+    .banner {
+        height: 65vh;
+    }
+
+    .banner video {
+        overflow: hidden;
+        height: auto;
+        bottom: 200px;
     }
 
     .content {
         margin-left: 50px;
+        align-items: center;
+        justify-content: center;
+        bottom: -100px;
     }
 
     .content h1 {
-        font-size: 60px;
-        font-weight: 600px;
+        font-size: 30px;
+        font-weight: 300px;
     }
 
     #picture img {
         display: none;
     }
 
+    #bagger h2 {
+        font-size: 40px;
+    }
+
     #bagger {
         justify-content: space-around;
-        margin-left: 50px;
+        display: block;
+        height: 50vh;
+        margin-top: 30px;
+        position: relative;
+        justify-content: center;
     }
 
     .block {
@@ -274,36 +295,48 @@ button:hover {
         display: contents;
     }
 
-    #bagger h2 {
-        padding-right: 30px;
-    }
-
     #bagger p {
-        border-left: solid 2px orange;
-        height: 40vh;
-        padding-left: 20px;
         font-size: 22px;
         font-weight: 100px;
-        border-radius: 10px;
+    }
+
+    button:hover {
+        background: none;
+        transition: none;
+        transform: none;
+        color: white;
     }
 }
 
 .testimonial-work {
     align-items: center;
     text-align: center;
-    margin-top: 3px;
-    bottom: 2p;
+    justify-content: space-around;
+    margin-top: 10px;
+    bottom: 2px;
+    float: center;
+    display: inline;
 }
 
 .testimonial-work h4 {
     font-size: 80px;
     font-weight: 400px;
     color: orange;
+    padding-top: 20px;
+    margin-left: 50px;
 }
 
 .testimonial-work p {
     font-size: 30px;
     font-weight: 90px;
+    padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-work h4 {
+        font-weight: 100px;
+        font-size: 40px;
+    }
 }
 
 .container1 {
